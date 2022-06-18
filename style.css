@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* styling the body and container */
+body{
+    background: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 2rem auto;
+    width: 85%;
+    display: flex;
+    gap: 2rem;
+}
+
+
+/* styling the Information section */
+.info{
+    width: 50%;
+    margin-top: 10rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    width: 80%;
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 14px;
+}
+
+/* styling the Form section */
+.form{
+    margin-top: 2rem;
+    width: 47%;
+}
+
+#form-info{
+    text-align: center;
+    padding: 0.7rem 5rem;
+    border-radius: 0.4rem;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0rem 0.4rem 0rem hsl(249, 10%, 26%);
+    font-size: 0.8rem;
+    opacity: 90%;
+}
+
+form{
+    margin-top: 1rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0.3rem 0rem hsl(0, 0%, 48%);
+}
+
+input{
+    padding: 0.6rem 11.5rem 0.6rem 1.3rem;
+    border: 0.05rem solid hsl(246, 25%, 77%);
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+input::placeholder{
+    font-weight: bold;
+}
+
+input:focus{
+    outline-color:hsl(246, 25%, 77%);
+    font-weight: bold;
+}
+
+button{
+    text-align: center;
+    padding: 0.65rem 8rem;
+    font-size: 11px;
+    color: white;
+    font-weight: 600;
+    background-color: hsl(154, 59%, 51%);
+    border: 0rem solid;
+    border-radius: 0.3rem;
+    letter-spacing: 0.02rem;
+}
+
+#terms-info{
+    margin: 0rem 2rem;
+    font-size: 9px;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#info{
+    color:hsl(249, 10%, 26%);
+    opacity: 40%;
+}
+
+#color{
+    color: red;
+    opacity: 60%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+/*                          MEDIA QUERIES                                      */
+@media(max-width: 600px){
+    /* styling the body and container */
+    body{
+        background: url(./images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%) ;
+    }
+
+    .container{
+       padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 140%;
+    }
+
+    /* styling the Information section */
+    .info{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        width: 100%;
+        line-height: 1.6;
+    }
+
+    /* styling the Form section */
+
+    form{
+        margin-top: 2rem;
+    }
+
+    #form-info{
+        padding: 0.5rem 6rem;
+    }
+
+    input{
+        padding: 0.7rem 7rem 0.7rem 1.3rem;
+    }
+
+    button{
+        padding: 0.6rem 5.3rem;
+    }
+
+    #terms-info{
+        width: 70%;
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 330px){
+    /* styling the Form section */
+    .form{
+        width: 100%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 100%;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    p{
+        font-size: 1.6rem;
+    }
+}
+
+@media(min-width: 200px) and (max-width: 290px){
+    input{
+        padding: 0.7rem 4rem 0.7rem 1.3rem;
+    }
+}
+
+@media(min-width: 330px) and (max-width:600px){
+    /* styling the Information section */
+    h1{
+        width: 85%;
+        margin-left: 6%;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width: 330px) and (max-width:350px){
+
+    /* styling the Form section */
+    .form{
+        width: 83%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 350px) and (max-width:370px){
+
+    /* styling the Form section */
+    .form{
+        width: 87%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 85%;
+    }
+
+}
+
+@media(min-width: 370px) and (max-width:390px){
+
+    /* styling the Form section */
+    .form{
+        width: 83%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 390px) and (max-width:400px){
+
+    /* styling the Form section */
+    .form{
+        width: 80%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 90%;
+    }
+
+}
+
+@media(min-width: 400px) and (max-width:430px){
+    /* styling the Form section */
+    .form{
+        width: 75%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 75%;
+    }
+}
+
+
+@media(min-width: 430px) and (max-width:500px){
+    /* styling the Form section */
+    .form{
+        width: 72%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 80%;
+    }
+}
+
+@media(min-width: 500px) and (max-width:600px){
+    /* styling the Form section */
+    .form{
+        width: 55%;
+    }
+
+    /* styling the Information section */
+    .info{
+        width: 55%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px){
+
+    .container{
+        width: 140%;
+        margin: 0rem 3rem;
+    }
+
+    /* styling the Form section */
+    .form{
+        width: 42%;
+    }
+
+    #form-info{
+        padding: 0.5rem 6rem;
+        box-shadow: 0rem 0.6rem 0rem hsl(249, 10%, 26%);
+    }
+
+    form{
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        box-shadow: 0rem 0.3rem 0rem hsl(249, 10%, 26%);
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 900px){
+    .info{
+        width: 40%;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+    .container{
+        gap: 5rem;
+    }
+
+    .info{
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .form{
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+
+    .container{
+        width: 140%;
+        margin: 0rem 3rem;
+    }
+
+    /* styling the Form section */
+    .form{
+        width: 36%;
+    }
+
+    #form-info{
+        padding: 0.5rem 6rem;
+        box-shadow: 0rem 0.6rem 0rem hsl(249, 10%, 26%);
+    }
+
+    form{
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 0.4rem;
+        box-shadow: 0rem 0.3rem 0rem hsl(249, 10%, 26%);
+    }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1300px){
+    .form{
+        width: 42%;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2000px){
+    .container{
+        width: 80%;
+        gap: 4rem;
+    }
+
+    .form{
+        width: 40%;
+        text-align: center;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 2000px){
+    .container{
+        width: 50%;
+    }
+
+    .form{
+        width: 40%;
+        text-align: center;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
